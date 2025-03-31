@@ -117,7 +117,7 @@ a:hover {
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding-right: 100px;
+        padding-right: 00px;
     }
 
     .logo img {
@@ -149,7 +149,7 @@ a:hover {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 20px;
+        padding: 0px;
         width: 100%;
         left: -100%;
     }
