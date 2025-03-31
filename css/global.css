@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 70px;
+    background: #172035;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width/height */
+    position: relative;
+}
+
+#logo {
+    height: 60px;
+    width: 15vw;
+    max-width: 200px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    display: none;
+}
+.links a{
+   padding-left: 70px; 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500px;
+    font-size: 15px;
+    margin-right: 20px;
+    padding: 10px;
+    padding-left: 50px;
+    
+}
+
+a:hover {
+    background: #09568d;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #172035;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #09568d;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+@media(150px <= width <= 1279px){
+
+    .links{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100hv;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #2c3e50;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .links a{
+        display: block;
+        margin: 40px 0;
+        line-height: 0px;
+
+    }
+
+    .checkbtn{
+        display: flex;
+        color: #FFCC29;
+        font-size: 30px;
+        margin-left: 100%;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10000;
+    }
+
+    #check:checked ~ .links{
+        left: 0;
+    }
+
+    .logo img {
+        width: auto;
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 10000;
+        transition: all 0.3s ease; /* Smooth transition for logo */
+    }
+
+    
+}
+
+@media  (768px <= width <= 1023px){
+       .links{
+        display: flex;
+        padding-right: 100%;
+        padding-right: 100px;
+        font-size: 50px;
+        
+       }
+
+       .logo img{
+        width: 150px;
+        padding-right: 50px;
+        margin: 0;
+       }
+
+       .links a{
+        font-size: 15px;
+        color: rgb(5, 243, 5);
+        padding-left: 30px;
+
+        
+       }
+}
+
+

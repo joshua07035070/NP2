@@ -1,0 +1,171 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Topic Section */
+.topic {
+    text-align: center;
+    padding: 50px 0;
+    background: #2d3e50;
+    color: white;
+}
+
+.topic h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Main Tech Support Section */
+#techsupport {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-grid columns for responsiveness */
+    gap: 30px;
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+.computersupport,
+.computersupport2,
+.computersupport3 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.computersupport:hover,
+.computersupport2:hover,
+.computersupport3:hover {
+    transform: scale(1.05);
+}
+
+.computersupport img,
+.computersupport2 img,
+.computersupport3 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.text,
+.text2,
+.text3 {
+    padding: 20px;
+}
+
+.text h1,
+.text2 h1,
+.text3 h1 {
+    font-size: 1.8rem;
+    color: #2d3e50;
+    margin-bottom: 15px;
+}
+
+.text p,
+.text2 p,
+.text3 p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5c6bc0;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3f51b5;
+}
+
+/* Footer Section */
+footer#techsupport {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #172035;
+    color: white;
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack logo and text vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    position: relative;
+}
+
+#logod {
+    width: 200px;
+    margin-bottom: 20px; /* Space between logo and text */
+}
+
+#footer {
+    font-size: 0.9rem;
+}
+
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .topic h1 {
+        font-size: 2.5rem;
+    }
+
+    .text h1,
+    .text2 h1,
+    .text3 h1 {
+        font-size: 1.5rem;
+    }
+
+    .text p,
+    .text2 p,
+    .text3 p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
+
+/* Responsive Design for Smaller Mobile Devices */
+@media (max-width: 480px) {
+    .topic h1 {
+        font-size: 2rem;
+    }
+
+    #techsupport {
+        padding: 20px;
+    }
+
+    .computersupport,
+    .computersupport2,
+    .computersupport3 {
+        border-radius: 8px;
+    }
+
+    .text h1,
+    .text2 h1,
+    .text3 h1 {
+        font-size: 1.2rem;
+    }
+
+    .text p,
+    .text2 p,
+    .text3 p {
+        font-size: 0.85rem;
+    }
+
+    button {
+        padding: 6px 12px;
+    }
+}

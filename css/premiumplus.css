@@ -1,0 +1,92 @@
+/* ====================================================
+  Start Premium Plus Page 
+==================================================== */
+
+/* General plan styles */
+.plan {
+    width: 300px;
+    height: auto;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.plan h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.title{
+    text-align: center;
+}
+
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plan li {
+    margin: 10px 0;
+}
+
+.plan button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.plan button:hover {
+    background-color: #555;
+}
+
+/* Responsive container for the plans */
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+/* ====================================================
+  End Premium Plus Page 
+==================================================== */
+
+/* ====================================================
+  Start Footer 
+==================================================== */
+
+footer {
+    width: 100%;
+    background: #172035;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+}
+
+footer img {
+    margin: 0 auto;
+    display: block;
+}
+
+p#footer {
+    text-align: center; /* Center the text */
+    color: white; /* Change text color to white */
+    font-size: 1em;
+    margin-top: 10px;
+}
+.para{
+    color: white;
+    text-align: center;
+}
+
+/* ====================================================
+  End Footer 
+==================================================== */

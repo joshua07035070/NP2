@@ -1,0 +1,175 @@
+/*====================================================================================================================================================================
+                                                    Start Courses Page 
+====================================================================================================================================================================*/
+#courses {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#courses h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Course Block Styles */
+.course, .course2, .course3 {
+    width: 30%;  /* Each course takes up 30% of the container */
+    min-width: 280px;  /* Prevents the course blocks from getting too small */
+    background: white;
+    border: 1px solid transparent;
+    padding: 20px;
+    box-sizing: border-box;  /* Ensures padding doesn't affect width */
+    margin-bottom: 20px;  /* Adds spacing between the rows of courses */
+}
+
+.course img, .course2 img, .course3 img {
+    width: 100%;  /* Make sure the images fill the container */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.course h2, .course2 h2, .course3 h2, .course h6, .course2 h6, .course3 h6 {
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #172035;
+    color: white;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #09568d;
+}
+
+/* Course Title Section */
+.text h1 {
+    padding-left: 40%;
+}
+
+/*====================================================================================================================================================================
+                                                    End Courses Page 
+====================================================================================================================================================================*/
+
+/*====================================================================================================================================================================
+                                                    Start Footer
+====================================================================================================================================================================*/
+/* Footer Section */
+footer#techsupport {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #172035;
+    color: white;
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack logo and text vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    position: relative;
+}
+
+#logod {
+    width: 200px;
+    margin-bottom: 20px; /* Space between logo and text */
+}
+
+#footer {
+    font-size: 0.9rem;
+}
+
+/*====================================================================================================================================================================
+                                                    End Footer
+====================================================================================================================================================================*/
+
+/*====================================================================================================================================================================
+                                                    Start Media Queries
+====================================================================================================================================================================*/
+
+/* Small screens (640px and below) */
+@media (max-width: 40rem) {
+    #courses {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .course, .course2, .course3 {
+        width: 90%;  /* Makes each course block take more width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .text h1 {
+        padding-left: 0; /* Center the title on small screens */
+    }
+}
+
+/* Medium screens (768px and below) */
+@media (max-width: 48rem) {
+    #courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course, .course2, .course3 {
+        width: 90%;  /* Courses take up 90% of the screen width */
+        margin-bottom: 20px;
+    }
+
+    .text h1 {
+        padding-left: 0; /* Center the title */
+    }
+}
+
+/* Large screens (1024px and below) */
+@media (max-width: 64rem) {
+    #courses {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .course, .course2, .course3 {
+        width: 30%;  /* Keep courses as 30% on medium to large screens */
+        margin-bottom: 20px;
+    }
+}
+
+/* Extra Large screens (1280px and below) */
+@media (max-width: 80rem) {
+    #courses {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .course, .course2, .course3 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .text{
+        text-align: center;
+    }
+}
+
+/* 2XL and above screens */
+@media (min-width: 96rem) {
+    #courses {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .course, .course2, .course3 {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+/*====================================================================================================================================================================
+                                                    End Media Queries
+====================================================================================================================================================================*/
