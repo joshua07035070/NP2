@@ -20,80 +20,53 @@ header {
 
 #logo {
     height: 60px;
-    width: 15vw;
+    width: auto;
     max-width: 200px;
 }
 
-
+/* Navigation */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
-   
 }
-#check{
+
+#check {
     display: none;
 }
-.checkbtn{
+
+.checkbtn {
     display: none;
 }
-.links a{
-   padding-left: 70px; 
+
+.links a {
+    padding-left: 70px;
 }
 
 a {
     color: white;
     text-decoration: none;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 15px;
     margin-right: 20px;
     padding: 10px;
     padding-left: 50px;
-    
 }
 
 a:hover {
     background: #09568d;
 }
 
-/* Button Styles */
-button {
-    width: 100%;
-    padding: 12px;
-    background: #172035;
-    color: white;
-    font-size: 1.2em;
-    border: none;
-    cursor: pointer;
-}
+/* Mobile Styles (Hamburger Menu) */
+@media (max-width: 1279px) {
 
-button:hover {
-    background: #09568d;
-}
-
-/* Typography */
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-size: 1.8em;
-}
-
-p {
-    font-size: 1.2em;
-}
-
-@media(150px <= width <= 1279px){
-
-    .links{
+    .links {
         position: fixed;
         top: 0;
         width: 100%;
-        height: 100hv;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -105,14 +78,13 @@ p {
         z-index: 9999;
     }
 
-    .links a{
+    .links a {
         display: block;
         margin: 40px 0;
-        line-height: 0px;
-
+        font-size: 1.2rem;
     }
 
-    .checkbtn{
+    .checkbtn {
         display: flex;
         color: #FFCC29;
         font-size: 30px;
@@ -123,7 +95,7 @@ p {
         z-index: 10000;
     }
 
-    #check:checked ~ .links{
+    #check:checked ~ .links {
         left: 0;
     }
 
@@ -136,32 +108,68 @@ p {
         z-index: 10000;
         transition: all 0.3s ease; /* Smooth transition for logo */
     }
-
-    
 }
 
-@media  (768px <= width <= 1023px){
-       .links{
+/* Tablet (768px to 1023px) Styles */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .links {
         display: flex;
-        padding-right: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
         padding-right: 100px;
-        font-size: 50px;
-        
-       }
+    }
 
-       .logo img{
+    .logo img {
         width: 150px;
-        padding-right: 50px;
         margin: 0;
-       }
+    }
 
-       .links a{
+    .links a {
         font-size: 15px;
         color: rgb(5, 243, 5);
         padding-left: 30px;
+    }
 
-        
-       }
+    .checkbtn {
+        display: flex;
+        color: white;
+        font-size: 25px;
+    }
 }
 
+/* Mobile (max-width: 767px) Styles */
+@media (max-width: 767px) {
 
+    .logo img {
+        width: 120px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        left: -100%;
+    }
+
+    .links a {
+        margin: 15px 0;
+        font-size: 18px;
+        color: white;
+    }
+
+    .checkbtn {
+        display: flex;
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    #check:checked ~ .links {
+        left: 0;
+    }
+}
